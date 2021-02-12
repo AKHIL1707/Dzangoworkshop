@@ -1,0 +1,14 @@
+{% extends 'base.html'%} 
+{%block content%}
+ 
+<form method="POST" action="#">
+	<div class="form-group col-lg-3">
+	{%csrf_token%}
+	First Name:<input type="text" name="fname" placeholder="name" class="form-control" required><br>
+	Last Name:<input type="text" name="lname" placeholder="Lname" class="form-control"required><br>
+	Mail-Id:<input type="text" name="mail" placeholder="@mail" class="form-control" required><br>
+	Password:<input type="Password" name="password" placeholder="Password" class="form-control" required><br>
+	<button class='btn btn-primary'type="Submit">Submit</button>
+</div>
+</form>
+ {%endblock%}
